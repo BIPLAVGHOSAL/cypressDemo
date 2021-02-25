@@ -1,0 +1,22 @@
+{
+  "name": "cypressdemo",
+  "version": "1.0.0",
+  "description": "Create a Sample Project to test the Cypress Framework.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BIPLAVGHOSAL/cypressDemo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BIPLAVGHOSAL/cypressDemo/issues"
+  },
+  "homepage": "https://github.com/BIPLAVGHOSAL/cypressDemo#readme",
+  "devDependencies": {
+    "cypress": "^6.5.0"
+  }
+}
