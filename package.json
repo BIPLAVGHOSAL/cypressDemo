@@ -1,10 +1,11 @@
 {
   "name": "cypressdemo",
   "version": "1.0.0",
-  "description": "Create a Sample Project to test the Cypress Framework.",
+  "description": "Autoamation Using Cypress Framework.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cypress run",
+    "cypress:open": "cypress open"
   },
   "repository": {
     "type": "git",

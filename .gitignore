@@ -11,3 +11,6 @@ yarn-error.log*
 # dependencies
 /node_modules
 /.vscode
+
+cypress/screenshots*
+cypress/videos*
