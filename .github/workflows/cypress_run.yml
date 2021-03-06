@@ -1,0 +1,31 @@
+# This workflow will install Python dependencies, run tests and lint with a single version of Python
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
+
+name: Cypress Automation Test
+
+on:
+  push:
+    branches: [ master, 'epic/**' , 'feature/**', 'hotfix/**' ]
+  pull_request:
+    branches: [ master, 'epic/**' , 'feature/**', 'hotfix/**' ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+
+      - name: Install Dependencies
+        uses: cypress-io/github-action@v1
+        with:
+          install: npm i 
+
+      - name: Cypress run
+        uses: cypress-io/github-action@v1
+        with:
+          install: npm t
+        env:
+          # pass the Dashboard record key as an environment variable
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
