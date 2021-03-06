@@ -14,9 +14,9 @@ jobs:
         uses: actions/checkout@v1
 
       - name: Print env variables
-      run: |
-        npm i -g @bahmutov/print-env
-        print-env GITHUB
+        run: |
+          npm i -g @bahmutov/print-env
+          print-env GITHUB
 
       - name: Cypress run
         uses: cypress-io/github-action@v2
