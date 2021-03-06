@@ -2,9 +2,9 @@ name: Cypress Automation Test
 
 on:
   push:
-    branches: [ master, 'epic/**' , 'feature/**', 'hotfix/**' ]
+    branches: [ main, 'epic/**' , 'feature/**', 'hotfix/**' ]
   pull_request:
-    branches: [ master, 'epic/**' , 'feature/**', 'hotfix/**' ]
+    branches: [ main, 'epic/**' , 'feature/**', 'hotfix/**' ]
 
 jobs:
   build:
