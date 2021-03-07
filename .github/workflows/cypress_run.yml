@@ -1,4 +1,4 @@
-name: Cypress Automation Test
+name: Cypress Automation CI Test
 
 on: push
 
